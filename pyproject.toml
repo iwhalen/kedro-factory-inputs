@@ -12,9 +12,6 @@ dynamic = [
     "version",
 ]
 dependencies = [
-    "ipython>=8.10",
-    "jupyterlab>=3.0",
-    "notebook",
     "kedro",
     "kedro-datasets[json,pickle]>=10.0.0",
 ]

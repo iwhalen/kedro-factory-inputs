@@ -6,7 +6,7 @@ def create_pipeline(**kwargs) -> Pipeline:
     return Pipeline([
         Node(
             create_report,
-            "{model}.predictions",
+            ["{model}.predictions", "params:dummy"],
             "report",
         )
     ])
