@@ -124,7 +124,7 @@ instance/
 docs/_build/
 docs/build/
 docs/source/modules.rst
-docs/source/kedro_wildcard_inputs*.rst
+docs/source/kedro_factory_inputs*.rst
 
 # PyBuilder
 target/

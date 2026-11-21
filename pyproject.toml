@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 requires-python = ">=3.11"
-name = "kedro_wildcard_inputs"
+name = "kedro_factory_inputs"
 readme = "README.md"
 dynamic = [
     "version",
@@ -16,18 +16,19 @@ dependencies = [
     "jupyterlab>=3.0",
     "notebook",
     "kedro",
+    "kedro-datasets[json,pickle]>=10.0.0",
 ]
 
 [project.scripts]
-kedro-wildcard-inputs = "kedro_wildcard_inputs.__main__:main"
+kedro-factory-inputs = "kedro_factory_inputs.__main__:main"
 
 [project.entry-points."kedro.hooks"]
 
 [tool.uv.sources]
-kedro = { git = "https://github.com/iwhalen/kedro.git", branch = "feat/wildcard-inputs" }
+kedro = { git = "https://github.com/iwhalen/kedro.git", branch = "feat/factory-inputs" }
 
 [tool.setuptools.dynamic.version]
-attr = "kedro_wildcard_inputs.__version__"
+attr = "kedro_factory_inputs.__version__"
 
 [tool.setuptools.packages.find]
 where = [
@@ -36,9 +37,12 @@ where = [
 namespaces = false
 
 [tool.kedro]
-package_name = "kedro_wildcard_inputs"
-project_name = "kedro-wildcard-inputs"
+package_name = "kedro_factory_inputs"
+project_name = "kedro-factory-inputs"
 kedro_init_version = "1.8.0"
 tools = "['None']"
 example_pipeline = "False"
 source_dir = "src"
+
+[tool.kedro_telemetry]
+project_id = "96647b72453f4f19814b865c91bbb228"

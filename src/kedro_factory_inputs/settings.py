@@ -4,7 +4,7 @@ https://docs.kedro.org/en/stable/configure/configuration_basics/#configuration""
 
 # Instantiated project hooks.
 # For example, after creating a hooks.py and defining a ProjectHooks class there, do
-# from kedro_wildcard_inputs.hooks import ProjectHooks
+# from kedro_factory_inputs.hooks import ProjectHooks
 # Hooks are executed in a Last-In-First-Out (LIFO) order.
 # HOOKS = (ProjectHooks(),)
 
@@ -48,3 +48,5 @@ CONFIG_LOADER_ARGS = {
 # Class that manages the Data Catalog.
 # from kedro.io import DataCatalog
 # DATA_CATALOG_CLASS = DataCatalog
+
+models = ["gbp-6-jupiter", "scorpio-4-uranium", "pierre-5-idiom"]
