@@ -19,8 +19,3 @@ uv run kedro run
 For more on uv, see [here](https://docs.astral.sh/uv/).
 
 For a further explanation of what is happening in this project, see here: <link>
-
-## TODO 
-
-- [ ] Implement dependency checking in pipeline constructor for inputs only.
-- [ ] Implement dataset gathering operation
